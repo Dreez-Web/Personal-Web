@@ -5,8 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-    
-    
+   
 }
 
 
@@ -14,12 +13,6 @@ ul{
     list-style-type: none;
 }
 
-.container{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-inline: 2rem;
-    margin: 1rem;
-}
 
 .main-header{
     display: flex;
@@ -35,7 +28,9 @@ ul{
     font-weight: 500;
    
 }
-
+.section{
+    padding-block: 1rem;
+}
 .logo{
     max-width: 5rem;
     
@@ -52,12 +47,40 @@ ul{
     transform: scale(1.5);
 }
 
+.proyectos{
+   background-color: black;
+   color: aliceblue;
+   padding-block: 1rem;
+}
+
+.contacto{
+    background-color: black;
+    color: aliceblue;
+    padding: .5rem 0;
+    padding-block: 1rem;
+
+
+}
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+    margin: 1rem;
+       
+}
+
+.container-quien-soy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
 }
+
 
 .quien-soy-inner{
     display: grid;
