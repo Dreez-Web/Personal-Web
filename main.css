@@ -9,7 +9,8 @@
 
 
 body{
-    background-image: url(/images/absurdity-1920x1080\ \(1\).png);
+    
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
     
 
 }
