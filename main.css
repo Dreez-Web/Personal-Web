@@ -23,9 +23,12 @@ ul{
 
 .main-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 2rem;
+
+    
+
 }
 
 
@@ -36,10 +39,16 @@ ul{
    
 }
 
+.logo{
+    max-width: 5rem;
+    
+}
+
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-item{
@@ -64,14 +73,12 @@ main{
 .section{
     padding-block: 1rem;
 }
-.logo{
-    max-width: 5rem;
-    
-}
+
 
 .nav-list{
     display: flex;
     gap: 1rem;
+    margin: 0 10rem;
 }
 
 .social-icons{
