@@ -129,6 +129,7 @@ main{
     border-radius: 1rem;
     transform: scale(1.2);
     position: absolute;
+    box-shadow: 2px 4px 20px 8px rgba(5, 80, 90, 0.938);
 }
 
 .quien-soy-foto img{
