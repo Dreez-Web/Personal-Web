@@ -5,7 +5,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
+    
    
+}
+
+
+body{
+    
+    background-color: rgb(221, 232, 241) ;
 }
 
 
@@ -28,6 +35,26 @@ ul{
     font-weight: 500;
    
 }
+
+.nav-item{
+    position: relative
+}
+
+.nav-item::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: .2s;
+    transform-origin: center ;
+}
+
+.nav-item:hover::after{
+    width: 100%;
+}
+
 .section{
     padding-block: 1rem;
 }
@@ -45,22 +72,19 @@ ul{
     display: flex;
     gap: 1rem;
     transform: scale(1.5);
-}
-
-.proyectos{
-   background-color: black;
-   color: aliceblue;
-   padding-block: 1rem;
-}
-
-.contacto{
-    background-color: black;
-    color: aliceblue;
-    padding: .5rem 0;
-    padding-block: 1rem;
-
 
 }
+
+.social-icons a{
+    transition: .2s;
+}
+
+.social-icons a:hover{
+    transform: scale(1.3);
+    color: blue;
+    
+}
+
 
 .container{
     display: flex;
@@ -82,6 +106,7 @@ ul{
 }
 
 
+
 .quien-soy-inner{
     display: grid;
     grid-template-columns: .35fr 1fr;
@@ -97,7 +122,7 @@ ul{
     grid-area: foto;
     background-color: black ;
     border-radius: 1rem;
-    transform: scale(1.2);
+    transform: scale(1.1);
    
 
 
@@ -107,11 +132,83 @@ ul{
     max-width: 100%;
     transform: scale(1.15);
     border-radius: 1rem;
+    transition: 1s;
+    
+}
+
+.quien-soy-foto img:hover{
+    transform: scale(1.2);
     
 }
 
 .h3-subtitle{
     grid-area: subtitulo;
+}
+
+.proyectos-inner a{
+    color: inherit;
+    font-weight: 500;
+    position: relative;
+}
+
+.proyectos-inner a::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: .2s;
+    transform-origin: center ;
+}
+
+.proyectos-inner a:hover::after{
+    width: 100%;
+    color: white;
+}
+
+.estudios-inner a{
+    color: inherit;
+    font-weight: 500;
+    position: relative;
+}
+
+.estudios-inner a::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: .2s;
+    transform-origin: center ;
+}
+
+.estudios-inner a:hover::after{
+    width: 100%;
+    color: white;
+}
+
+.contacto-inner a{
+    color: inherit;
+    font-weight: 500;
+    position: relative;
+}
+
+.contacto-inner a::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: .2s;
+    transform-origin: center ;
+}
+
+.contacto-inner a:hover::after{
+    width: 100%;
+    color: white;
 }
 
 .section-title{
@@ -151,4 +248,9 @@ ul{
 .social{
     transform: scale(1.3);
     
+    
+}
+
+.social a{
+    padding: .5rem;
 }
