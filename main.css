@@ -46,6 +46,11 @@ main{
     align-items: center;
 }
 
+.nav-menu{
+    display: block;
+}
+
+
 .nav-item{
     position: relative
 }
@@ -74,6 +79,7 @@ main{
     display: flex;
     gap: 1rem;
     margin: 0 10rem;
+    
 }
 
 .social-icons{
@@ -134,6 +140,7 @@ main{
 }
 
 .quien-soy-foto img{
+    display: block;
     max-width: 100%;
     transform: scale(1.15);
     border-radius: 1rem;
@@ -220,7 +227,11 @@ main{
     font-weight: 700;
 }
 
-.section-text{
+.main-section-text{
+    display: block;
+}
+
+.main-section-text{
     grid-area: texto;
 }
 
@@ -256,4 +267,56 @@ main{
 
 .social a{
     padding: .5rem;
+}
+
+@media screen and (max-width: 600px) {
+
+.nav-menu{
+    display: none;
+}
+
+.logo{
+    max-width: 4rem; 
+    margin-right: 2rem; 
+}
+
+.quien-soy-inner{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "subtitulo"
+        "foto "
+        "titulo";
+    column-gap: 4rem;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.quien-soy-foto{
+    grid-area: foto;
+    background-color: black ;
+    border-radius: 1rem;
+    transform: scale(.7);
+    position: absolute;
+    margin: 1rem;
+    box-shadow: 2px 4px 20px 8px rgba(5, 80, 90, 0.938);
+}
+
+
+.h3-subtitle{
+    grid-area: subtitulo;
+    font-size: 1rem;
+}
+
+.main-section-text{
+    display: none;
+}
+
+.section-title{
+    grid-area: titulo;
+    font-size: 1.7rem;
+}
+    
 }
