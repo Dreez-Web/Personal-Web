@@ -281,33 +281,30 @@ main{
 }
 
 .quien-soy-inner{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "subtitulo"
-        "foto "
-        "titulo";
-    column-gap: 4rem;
-    padding: 1rem 2rem;
-    position: relative;
+    
+    
 }
 
 .quien-soy-foto{
     grid-area: foto;
     background-color: black ;
     border-radius: 1rem;
-    transform: scale(.7);
-    position: absolute;
-    margin: 1rem;
+    transform: scale(.4);
+    position: relative;
+    margin: 0;
+    padding: 0;
     box-shadow: 2px 4px 20px 8px rgba(5, 80, 90, 0.938);
 }
 
 
 .h3-subtitle{
-    grid-area: subtitulo;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    position: relative;
 }
 
 .main-section-text{
@@ -315,8 +312,8 @@ main{
 }
 
 .section-title{
-    grid-area: titulo;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    text-align: center;
 }
     
 }
